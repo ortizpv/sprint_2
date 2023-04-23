@@ -4,7 +4,8 @@
   "description": "Proyecto sprint 2 angular itacademy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server"
   },
   "author": "ortizpv",
   "license": "ISC",

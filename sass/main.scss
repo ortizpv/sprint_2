@@ -1,0 +1,16 @@
+$utilities: (
+        "overflow": (
+                responsive: true,
+                property: overflow,
+                values: visible hidden scroll auto,
+        ),
+);
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+.start-25 {
+  left: 25%;
+}
+
+$thumbnail-border-color: red;
+
