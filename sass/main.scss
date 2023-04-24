@@ -5,12 +5,22 @@ $utilities: (
                 values: visible hidden scroll auto,
         ),
 );
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
 
 
 .start-25 {
-  left: 25%;
+  left: 50%;
+  right: 50%;
 }
-
-$thumbnail-border-color: red;
 
