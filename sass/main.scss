@@ -1,3 +1,15 @@
+// importa bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+// Asignar color
+$primary: #5265E1;
+$secundary: #FA5959; // importar funciones y variables
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+// crea colores nuevos
+$custom-theme-colors: ( "altdark": #522192);
+// agrega los colores nuevos creados
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
 $utilities: (
         "overflow": (
                 responsive: true,
