@@ -21574,4 +21574,8 @@ textarea.form-control-lg {
   right: 50%;
 }
 
+.background-image {
+  z-index: -1;
+}
+
 /*# sourceMappingURL=main.css.map */
