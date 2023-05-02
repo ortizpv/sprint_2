@@ -1,94 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <!---------- enlace Bootstrap --------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito:wght@200&family=Open+Sans:ital,wght@1,300&display=swap"
+            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400;1,700&display=swap"
+          rel="stylesheet">
 
-    <!---------- enlace JavaScript --------->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!---------- enlace CSS --------->
     <link rel="stylesheet" href="./sass/main.css">
 
-    <title>* SPRINT 2 *</title>
+    <title>SPRINT 2</title>
 </head>
+
 <body>
-<header>
-    <div class = "container-fluid">
-        <div class = "row">
-            <div class = "col-12">
-                <!--------------------------navBar----------------------------------->
-                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
-                    <div class="container m-auto ms-auto me-lg-5 mx-auto mt-4">
-                        <a class="navbar-brand" href="#">
-                            <img src="./Imagenes/logo-bookmark.svg" height="24">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">FEATURES</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">PRICING</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">CONTACT</a>
-                                </li>
-                            </ul>
-                            <form class="m-e-2">
-                                <button class="btn btn-outline-danger btn-secondary text-white shadow"
-                                        type="submit">LOGIN
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </nav>
+<div class="container-fluid">
+    <nav class="navbar navbar-md navbar-light">
+        <div class="row">
+            <div class="col-12 p-3">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="imagenes/logo-bookmark.svg" height="24"
+                         class="logo-bookmark align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="false" href="#" id="navbarContact">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-disabled="true" class="nav-link" data-bs-placement="left" href="#"
+                           tabindex="-1">LOGIN</a>
+                    </li>
+
+                    <button class="btn btn-outline-danger btn-secondary text-white shadow" type="submit">LOGIN
+                    </button>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
+</div>
 
-</header>
 
-<aside class="container d-flex justify-content-around mb-5">
-    <div class="row mt-3 ">
-        <div class="col-12 text-rigth p-5">
-            <div class = "col-6">
-                <h1 class="fw-bold">A Simple Bookmark Manager</h1>
-                <p class="text-rigth fw-light p-4">
-                    A clean and simple interface to organize your favourite
-                    websites. Open a new browser tab and see your sites load
-                    instantly. Try it for free.
-                </p>
-            <div class="row">
-                <div class="col-6 text-end">
-                    <button class="btn btn-primary btn-sm shadow mb-5" type="button">Get it on Chrome</button>
-                </div>
-                <div class="col-6 text-start">
-                    <button class="btn btn-white btn-sm shadow mb-5" type="button">Get it on Firefox</button>
-                </div>
-            </div>
-            </div>
+<aside class="container">
+    <div class="row">
+        <div class="col-6">
+            <h3 class="fw-bold">A Simple Bookmark Manager</h3>
+            <p class="text-rigth fw-light p-3">
+                A clean and simple interface to organize your favourite
+                websites. Open a new browser tab and see your sites load
+                instantly. Try it for free.
+            </p>
+            <button class="btn btn-primary btn-sm shadow mb-5" type="button">Get it on Chrome</button>
+            <button class="btn btn-white btn-sm shadow mb-5" type="button">Get it on Firefox</button>
         </div>
-        <div class="col-6 text-center">
-            <div class="position-relative col-3 p-5">
+        <div class="col-6">
+            <div class="position-relative">
                 <img src="./Imagenes/illustration-features-tab-1.svg"
                      class="start-25 me-5 top-50 shadow-lg mb-5 bg-body rounded"/>
-                <div class = "position-relative col-3 p-10">
-                <img src="./Imagenes/imagen.svg"
-                     class="start-25 me-3 top-50"/>
+                <div class="position-absoluta">
+                    <img src="./Imagenes/imagen.svg" class="start-25 me-2"/>
                 </div>
             </div>
         </div>
     </div>
 </aside>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 
