@@ -1,12 +1,15 @@
-// importa bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap';
+
 // Asignar color
 $primary: #5265E1;
-$secundary: #FA5959; // importar funciones y variables
+$secondary: #FA5959;
+
+// importa bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+// importar funciones y variables
 @import '../node_modules/bootstrap/scss/_functions';
 @import '../node_modules/bootstrap/scss/_variables';
 // crea colores nuevos
-$custom-theme-colors: ( "altdark": #522192);
+$custom-theme-colors: ("altdark": #522192);
 // agrega los colores nuevos creados
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
@@ -38,4 +41,82 @@ $grid-breakpoints: (
 
 .background-image {
   z-index: -1;
+}
+
+.image-container {
+  width: 100%;
+  height: 30em;
+}
+
+#top-image {
+  width: 90%;
+  top: 10%;
+  right: 0;
+}
+
+#tab-image {
+  width: 90%;
+  top: 10%;
+  left: 0%;
+  transform: rotate(180deg); /* Equal to rotateZ(45deg) */
+}
+
+@media (min-width: 576px) and (max-width:991px) {
+  .image-container {
+    height: 30em;
+  }
+  #top-image {
+    width: 80%;
+    top: 20%;
+  }
+  #tab-image {
+    width: 80%;
+    top: 20%;
+    left: 0;
+
+    transform: rotate(180deg); /* Equal to rotateZ(45deg) */
+  }
+
+}
+
+
+.card-browser {
+  .logo{
+    max-height: 10em;
+    align-self: center;
+    margin-top: 5em;
+  }
+  .titulo {
+    margin-top: 2em;
+    text-align: center;
+  }
+  .image-punto {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+#card2 {
+  margin-top: 2em;
+}
+
+
+#card3 {
+  margin-top: 4em;
+}
+.nav-link{
+  color: inherit;
+  &.active {
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid $secondary !important;
+  }
+}
+
+.accordion-button::after {
+  background-image: url(/Imagenes/icon-arrow.svg);
+}
+
+.btn-secondary {
+  color: #fff;
 }
